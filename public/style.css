@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+button {
+    color: gray;
+}
+
+header,
+main,
+footer {
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    margin: 70px 0;
+}
+
+main h2 span {
+    color: rgba(200, 10, 10, 0.657);
+}
+
+header button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(200, 10, 10, 0.657);
+    color: white;
+    font-weight: bold;
+}
+
+main .donors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blood {
+    color: rgba(200, 10, 10, 0.657);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blood::before {
+    content: "";
+    background-color: #ff4f4f11;
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+}
+
+.donor p {
+    margin: 24px 0;
+    margin-bottom: 12px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    align-items: center;
+    background-color: rgba(200, 10, 10, 0.657);
+    padding: 16px 64px;
+    border-radius: 6px;
+}
+
+form input,
+form button {
+    width: 100%;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+}
+
+form input {
+    background-color: transparent;
+}
+
+form input::placeholder {
+    color: gray;
+
+}
+
+form button {
+    font-weight: bold;
+    border: none;
+}
+
+header,
+.form,
+main {
+    margin: 0 auto 70px;
+    width: 90%;
+    max-width: 500px;
+
+}
+
+header h1,
+main h2 {
+    margin-bottom: 70px;
+}
+
+footer {
+    margin-top: auto;
+    padding-bottom: 16px;
+    padding-top: 8px;
+    border: 1px solid #eee;
+}
+
+section.form {
+    transition: all 300ms;
+}
+
+section.form.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+
+}
