@@ -1,5 +1,5 @@
 # DOE SANGUE
-![DOE-sangue](https://imgur.com/UUGDKcO)
+![DOE-sangue](https://i.imgur.com/UUGDKcO.jpg)
 
 ## Objetivo
 Banco de dados de doadores de sangue.
